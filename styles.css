@@ -211,7 +211,7 @@ h3 > span {
   width: 90vw;
   height: auto;
   display: flex;
-  gap: 50px;
+  gap: 0.5vh 0.5vw;
   max-width: 1280px;
   margin: 5vh auto;
   margin-left: auto;
@@ -230,7 +230,6 @@ h3 > span {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s;
-  opacity: 0.7;
 }
 
 .image-grid img.topleft-corner {
@@ -244,4 +243,8 @@ h3 > span {
 }
 .image-grid img.bottomleft-corner {
   border-radius: 0 0 0 50px;
+}
+
+.add-radius {
+  border-radius: 50px !important;
 }

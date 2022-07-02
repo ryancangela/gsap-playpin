@@ -90,7 +90,7 @@ gsap.to("#hero-four", {
     markers: false,
     trigger: "#hero-three-cut",
     pin: false,
-    start: "-=1300",
+    start: "-=1100",
     end: "+=400",
     scrub: 1,
     // duration: 4,
@@ -108,9 +108,8 @@ gsap.to(".img-one", {
     markers: false,
     trigger: ".image-grid",
     pin: false,
-    start: "-=400",
-    end: "+=800",
-    toggleClass: "spread",
+    start: "-=600",
+    end: "+=900",
     scrub: 1,
     // duration: 4,
     toggleActions: "restart play pause restart",
@@ -125,9 +124,9 @@ gsap.to(".img-two", {
     markers: false,
     trigger: ".image-grid",
     pin: false,
-    start: "-=400",
-    end: "+=800",
-    toggleClass: "spread",
+    start: "-=600",
+    end: "+=900",
+
     scrub: 1,
     // duration: 4,
     toggleActions: "restart play pause restart",
@@ -136,15 +135,13 @@ gsap.to(".img-two", {
 gsap.to(".img-three", {
   xPercent: 650,
   yPercent: 100,
-  rotation: 60 * 2,
   scale: 1.25,
   scrollTrigger: {
     markers: false,
     trigger: ".image-grid",
     pin: false,
-    start: "-=400",
-    end: "+=800",
-    toggleClass: "spread",
+    start: "-=600",
+    end: "+=900",
     scrub: 1,
     // duration: 4,
     toggleActions: "restart play pause restart",
@@ -152,17 +149,64 @@ gsap.to(".img-three", {
 });
 gsap.to(".img-nine", {
   xPercent: 800,
-  yPercent: -250,
-  rotation: 400 * 2,
+  yPercent: -150,
   scale: 0.65,
 
   scrollTrigger: {
     markers: false,
     trigger: ".image-grid",
     pin: false,
-    start: "-=400",
-    end: "+=800",
-    toggleClass: "spread",
+    start: "-=600",
+    end: "+=900",
+
+    scrub: 1,
+    // duration: 4,
+    toggleActions: "restart play pause restart",
+  },
+});
+
+gsap.to(".row-one", {
+  xPercent: 0,
+  yPercent: 80,
+  scrollTrigger: {
+    markers: false,
+    trigger: ".image-grid",
+    pin: false,
+    ease: "elastic",
+    start: "-=600",
+    end: "+=900",
+    scrub: 1,
+    // duration: 4,
+    toggleActions: "restart play pause restart",
+  },
+});
+
+gsap.to(".row-two", {
+  xPercent: 0,
+  yPercent: 50,
+  scrollTrigger: {
+    markers: false,
+    trigger: ".image-grid",
+    pin: false,
+    ease: "elastic",
+    start: "-=600",
+    end: "+=900",
+    scrub: 1,
+    // duration: 4,
+    toggleActions: "restart play pause restart",
+  },
+});
+
+gsap.to(".row-three", {
+  xPercent: 0,
+  yPercent: -50,
+  scrollTrigger: {
+    markers: false,
+    trigger: ".image-grid",
+    pin: false,
+    ease: "elastic",
+    start: "-=600",
+    end: "+=900",
     scrub: 1,
     // duration: 4,
     toggleActions: "restart play pause restart",
