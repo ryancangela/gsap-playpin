@@ -33,7 +33,8 @@ section {
 }
 
 #hero-two,
-#hero-three {
+#hero-three,
+#hero-four {
   margin: 25vh auto;
 }
 
@@ -163,4 +164,84 @@ h3 > span {
 #shuffle > i {
   font-size: clamp(1.875rem, 0.875rem + 1.25vw, 2.875rem);
   color: #fff;
+  transition-property: all;
+  transition-timing-function: linear;
+}
+
+/* shuffle icon animations */
+#shuffle > i.up {
+  animation: shiftup 5s ease 1s infinite normal forwards;
+  position: relative;
+  transform: scale(0.85);
+}
+
+@keyframes shiftup {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 2vh;
+    transform: rotate(5deg);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+#shuffle > i.down {
+  animation: shiftdown 5s ease 1s infinite normal forwards;
+  position: relative;
+  transform: scale(0.85);
+}
+
+@keyframes shiftdown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -2vh;
+    transform: rotate(-5deg);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.image-grid {
+  width: 90vw;
+  height: auto;
+  display: flex;
+  gap: 50px;
+  max-width: 1280px;
+  margin: 5vh auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15vh;
+  border-radius: 50px;
+  flex-wrap: wrap;
+  filter: drop-shadow(3px 8px 15px #111017);
+}
+.image-grid img {
+  height: auto;
+  max-height: 300px;
+  max-width: 100%;
+  flex: 1 0 21%;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+
+.image-grid img.topleft-corner {
+  border-radius: 50px 0 0 0;
+}
+.image-grid img.topright-corner {
+  border-radius: 0 50px 0 0;
+}
+.image-grid img.bottomright-corner {
+  border-radius: 0 0 50px 0;
+}
+.image-grid img.bottomleft-corner {
+  border-radius: 0 0 0 50px;
 }
