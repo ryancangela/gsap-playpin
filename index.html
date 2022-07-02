@@ -1,34 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Quicksand:wght@400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/156a7a1284.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
-
-  <link rel="preload" href="gsap.js" as="script" />
-  <title>Gsap Playground</title>
-
+  <link href="styles.css" rel="stylesheet">
 </head>
 
+
 <body>
-  <header></header>
-  <main>
-    <div class="section-one"></div>
-    <div class="card"></div>
-  </main>
-  <footer></footer>
 
-  <script src="./gsap.js"></script>
+  <!--BREAK-->
+
+  <section>
+    <div id="hero-one">
+      <h1>
+        Follow me through this Gsap page
+      </h1>
+      <h2>
+        This will be a learning experience for me and you.
+      </h2>
+    </div>
+  </section>
+
+  <!--BREAK-->
+  <div class="section-breakers" id="hero-one-cut"></div>
+  <!--BREAK-->
+
+  <section>
+    <div id="hero-two">
+      <h2>First section</h2>
+      <div id="three">
+        <h3>
+          Street Photography Flex Gallery <br><span>We'll be adding rotation and translate to the scroll.</span>
+        </h3>
+        <div class="gallery">
+          <img src="assets/gallery/isaak-alexandre-karslian-F5Ka2oNylUU-unsplash.jpg" alt="">
+          <img src="assets/gallery/marek-piwnicki-X5REiD-cIlw-unsplash.jpg" alt="">
+          <img src="assets/gallery/job-savelsberg--mdmf_bQRa0-unsplash.jpg" alt="">
+          <img src="assets/gallery/julien-riedel-ap7ctdPMHwM-unsplash.jpg" alt="">
+          <img src="assets/gallery/job-savelsberg-Olp_dG4Zy9k-unsplash.jpg">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--BREAK-->
+  <div class="section-two-breakers" id="hero-two-cut"></div>
+  <!--BREAK-->
+
+  <section>
+    <div id="hero-three">
+      <h2>Second section</h2>
+      <div class="icon-flex">
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-align-justify"></i>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      <div id="shuffle">
+        <i class="fa-solid fa-atom"></i>
+        <i class="fa-solid fa-code-branch"></i>
+        <i class="fa-solid fa-bug"></i>
+        <i class="fa-solid fa-circle-nodes"></i>
+        <i class="fa-solid fa-filter"></i>
+        <i class="fa-solid fa-qrcode"></i>
+      </div>
+      <div id="shuffle">
+        <i class="fa-solid fa-cube"></i>
+        <i class="fa-solid fa-file-code"></i>
+        <i class="fa-solid fa-diagram-successor"></i>
+        <i class="fa-solid fa-arrows-spin"></i>
+        <i class="fa-solid fa-terminal"></i>
+        <i class="fa-solid fa-palette"></i>
+        <i class="fa-solid fa-shuttle-space"></i>
+      </div>
+      <div id="shuffle">
+        <i class="fa-solid fa-yin-yang"></i>
+        <i class="fa-solid fa-laptop-code"></i>
+        <i class="fa-solid fa-circle-notch"></i>
+        <i class="fa-solid fa-compact-disc"></i>
+        <i class="fa-solid fa-shapes"></i>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!--BREAK-->
+  <div class="section-three-breakers" id="hero-three-cut"></div>
+  <!--BREAK-->
+
+  <script src="gsap.js"></script>
+
 </body>
-
-</html>
