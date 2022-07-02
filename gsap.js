@@ -105,7 +105,7 @@ gsap.to(".img-one", {
   rotation: 200 * 1,
   scale: 1.5,
   scrollTrigger: {
-    markers: true,
+    markers: false,
     trigger: ".image-grid",
     pin: false,
     start: "-=400",
@@ -120,9 +120,9 @@ gsap.to(".img-two", {
   xPercent: -500,
   yPercent: 100,
   rotation: -60 * 1,
-  scale: 1.75,
+  scale: 0.85,
   scrollTrigger: {
-    markers: true,
+    markers: false,
     trigger: ".image-grid",
     pin: false,
     start: "-=400",
@@ -138,9 +138,8 @@ gsap.to(".img-three", {
   yPercent: 100,
   rotation: 60 * 2,
   scale: 1.25,
-  skew: 20,
   scrollTrigger: {
-    markers: true,
+    markers: false,
     trigger: ".image-grid",
     pin: false,
     start: "-=400",
@@ -155,10 +154,10 @@ gsap.to(".img-nine", {
   xPercent: 800,
   yPercent: -250,
   rotation: 400 * 2,
-  scale: 1.15,
+  scale: 0.65,
 
   scrollTrigger: {
-    markers: true,
+    markers: false,
     trigger: ".image-grid",
     pin: false,
     start: "-=400",
