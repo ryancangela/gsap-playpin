@@ -248,3 +248,35 @@ h3 > span {
 .add-radius {
   border-radius: 50px !important;
 }
+
+@media only screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
+  #hero-one,
+  #hero-two,
+  #hero-three,
+  #hero-four {
+    width: 100vw;
+    margin: 15vh auto;
+  }
+  .gallery {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    height: auto;
+  }
+  .gallery img {
+    width: 100%;
+    flex: 1;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s;
+    opacity: 0.7;
+    max-height: 20vh;
+  }
+
+  #shuffle {
+    margin: 10vh auto;
+  }
+}
